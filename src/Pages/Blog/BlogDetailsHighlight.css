@@ -1,0 +1,179 @@
+/*
+ * Google Code style (c) Aahan Krish <geekpanth3r@gmail.com>
+ * Namespaced under .blog-details
+ * Enhanced to display code blocks as cubes with dark mode support.
+ */
+
+/* ---- Cube Style for Code Blocks ---- */
+.blog-details pre {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 1em 0;
+    overflow-x: auto;
+    white-space: pre-wrap; /* Allow code to wrap */
+    word-break: break-word;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark mode for pre tags */
+.dark .blog-details pre {
+    background-color: #1e1e1e;
+    border-color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* ---- Google Code Style for Highlight.js ---- */
+/* Light Mode */
+.blog-details .hljs {
+    background: transparent; /* Transparent because pre already has a background */
+    color: black;
+}
+
+.blog-details .hljs-comment,
+.blog-details .hljs-quote {
+    color: #800;
+}
+
+.blog-details .hljs-keyword,
+.blog-details .hljs-selector-tag,
+.blog-details .hljs-section,
+.blog-details .hljs-title,
+.blog-details .hljs-name {
+    color: #008;
+}
+
+.blog-details .hljs-variable,
+.blog-details .hljs-template-variable {
+    color: #660;
+}
+
+.blog-details .hljs-string,
+.blog-details .hljs-selector-attr,
+.blog-details .hljs-selector-pseudo,
+.blog-details .hljs-regexp {
+    color: #080;
+}
+
+.blog-details .hljs-literal,
+.blog-details .hljs-symbol,
+.blog-details .hljs-bullet,
+.blog-details .hljs-meta,
+.blog-details .hljs-number,
+.blog-details .hljs-link {
+    color: #066;
+}
+
+.blog-details .hljs-title,
+.blog-details .hljs-doctag,
+.blog-details .hljs-type,
+.blog-details .hljs-attr,
+.blog-details .hljs-built_in,
+.blog-details .hljs-params {
+    color: #606;
+}
+
+.blog-details .hljs-attribute,
+.blog-details .hljs-subst {
+    color: #000;
+}
+
+.blog-details .hljs-formula {
+    background-color: #eee;
+    font-style: italic;
+}
+
+.blog-details .hljs-selector-id,
+.blog-details .hljs-selector-class {
+    color: #9b703f;
+}
+
+.blog-details .hljs-addition {
+    background-color: #baeeba;
+}
+
+.blog-details .hljs-deletion {
+    background-color: #ffc8bd;
+}
+
+.blog-details .hljs-doctag,
+.blog-details .hljs-strong {
+    font-weight: bold;
+}
+
+.blog-details .hljs-emphasis {
+    font-style: italic;
+}
+
+/* Dark Mode */
+.dark .blog-details .hljs {
+    color: #cccccc;
+}
+
+.dark .blog-details .hljs-comment,
+.dark .blog-details .hljs-quote {
+    color: #d98686;
+}
+
+.dark .blog-details .hljs-keyword,
+.dark .blog-details .hljs-selector-tag,
+.dark .blog-details .hljs-section,
+.dark .blog-details .hljs-title,
+.dark .blog-details .hljs-name {
+    color: #69a7ff;
+}
+
+.dark .blog-details .hljs-variable,
+.dark .blog-details .hljs-template-variable {
+    color: #ffcd77;
+}
+
+.dark .blog-details .hljs-string,
+.dark .blog-details .hljs-selector-attr,
+.dark .blog-details .hljs-selector-pseudo,
+.dark .blog-details .hljs-regexp {
+    color: #7cd47c;
+}
+
+.dark .blog-details .hljs-literal,
+.dark .blog-details .hljs-symbol,
+.dark .blog-details .hljs-bullet,
+.dark .blog-details .hljs-meta,
+.dark .blog-details .hljs-number,
+.dark .blog-details .hljs-link {
+    color: #58c4c4;
+}
+
+.dark .blog-details .hljs-title,
+.dark .blog-details .hljs-doctag,
+.dark .blog-details .hljs-type,
+.dark .blog-details .hljs-attr,
+.dark .blog-details .hljs-built_in,
+.dark .blog-details .hljs-params {
+    color: #bcbcbc;
+}
+
+.dark .blog-details .hljs-attribute,
+.dark .blog-details .hljs-subst {
+    color: #ffffff;
+}
+
+.dark .blog-details .hljs-formula {
+    background-color: #333333;
+}
+
+.dark .blog-details .hljs-selector-id,
+.dark .blog-details .hljs-selector-class {
+    color: #c19870;
+}
+
+.dark .blog-details .hljs-addition {
+    background-color: #285b28;
+    color: #cdf9cd;
+}
+
+.dark .blog-details .hljs-deletion {
+    background-color: #5b2828;
+    color: #f9d8d2;
+}

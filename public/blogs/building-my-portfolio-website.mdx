@@ -1,0 +1,67 @@
+---
+
+## Intro
+
+It all started with a silly thought: can I host my own website in the cheapest way possible? What better way to find out than by experimenting with tools and combinations I had never used before?
+
+I decided it was time to build my own portfolio website to showcase my skills and personal style. I knew I didn’t want to rely on pre-built solutions — whether open-source templates or third-party platforms. Instead, I wanted to build everything from scratch, learning as I go, using a mix of technologies, free-tier services, and creative problem-solving.
+
+In this post, I’ll share my journey of building and hosting my own website — from free SSL certificates and DNS management to static hosting on a Google Cloud bucket with App Engine. I’ll walk through what worked, what didn’t, and how these decisions shaped the architecture of my site.
+
+---
+
+## The Spark: Why a Portfolio Website?
+
+Every professional needs a space to showcase their work. For me, a portfolio website was not just about visibility — it was a perfect excuse to play with new tools, refine old workflows, and build something from scratch. From initial inspiration and architectural planning to designing the layout and writing code — the whole process was both fun and educational. And the bonus? I ended up with a site that reflects me.
+
+---
+
+## Diving into Free Tools: The Research Phase
+
+Once I picked a domain (which I’m not including here, as your options may differ by region), I began exploring free services and the tools I was curious to try.
+
+Every website needs the basics: hosting, an SSL certificate, and ideally, DNS management. I was surprised by how many services offer these features for free or within generous free tiers.
+
+I already had some experience with things like Let’s Encrypt, but I also wanted to explore new platforms — especially Google Cloud, which I hadn’t used extensively before.
+
+---
+
+## Setting Up Email Forwarding
+
+Since my domain came with free email addresses, I wanted to find a way to use them without paying for email hosting. The simplest and most cost-effective solution? Email forwarding to my existing inbox.
+
+Setting this up was straightforward, although I had to tweak a few DNS settings later in the process to make everything work smoothly.
+
+---
+
+## Hosting On Google Bucket And App Engine
+
+I explored several options — Oracle's free-tier VPS (where I could’ve used Nginx, like in past projects), Firebase, Heroku, and more. But in the spirit of trying something new, I thought: if I’m considering Firebase (which is now owned by Google), why not try Google Cloud itself?
+
+## Hurdles Along The Way
+
+Getting started with Google Cloud CLI and navigating their services took some getting used to. Google’s documentation is great, but the platform is massive. After some trial and error, I managed to set up a static hosting solution using a Google Cloud Storage bucket and an App Engine service.
+
+Next, I connected my custom domain — and here’s where things got a bit tricky. I was also setting up DNS with Cloudflare’s free tier. Since my domain wasn’t registered through Cloudflare or Google, I had to jump through a few hoops to get everything synced. But once the DNS was sorted out, everything worked seamlessly.
+
+Bonus: Google Cloud integrates with Let’s Encrypt, so enabling SSL was just a matter of ticking a box and adjusting a few settings. Super smooth.
+
+I intentionally designed my site as a static website to stay within the free tier’s limitations — especially regarding compute time and bandwidth.
+
+---
+
+## Looking Forward
+
+With the hosting setup ready, all that was left was to build the actual website. I decided to use **React** for the frontend (and originally considered Node.js for the backend, but dropped it since I didn’t need a server side for a static site).
+
+If you’re reading this, then I probably accomplished it 😉.
+
+I took the opportunity to try new tools like **Tailwind CSS**, **highlight.js**, and other libraries. I aimed to build a modular, theme-supporting site (with cookie-based preferences) that I personally enjoy visiting.
+
+---
+
+## Final Thoughts
+
+If you’re thinking about creating your own website, I highly recommend experimenting with free tools and platforms. You’ll save money, yes — but more importantly, you’ll gain valuable insights into modern web technologies and how to mix and match them to build something unique.
+
+**Happy building!**
